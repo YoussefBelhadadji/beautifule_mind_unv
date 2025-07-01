@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font-family: serif; font-size: 48px; fill: #000000; }
+    .subtitle { font-family: sans-serif; font-size: 14px; fill: #000000; letter-spacing: 2px; }
+    .brain { fill: #FCD97B; }
+    .line { stroke: #FCD97B; stroke-width: 2; }
+  </style>
+  
+  <g transform="translate(10, 60)">
+    <text class="title">
+      <tspan>Beautiful</tspan>
+      <tspan x="180">Münd</tspan>
+      <tspan x="320" style="font-size: 24px">CENTER</tspan>
+    </text>
+    
+    <path class="brain" d="M240 -10 C 245 -15, 250 -18, 255 -15 C 260 -12, 262 -8, 260 -5 C 258 -2, 255 0, 250 0 C 245 0, 242 -2, 240 -5 C 238 -8, 238 -12, 240 -10"/>
+    
+    <path class="line" d="M150 -15 Q 240 -35, 330 -15" fill="none"/>
+    
+    <text class="subtitle" x="100" y="30">FOR INTEGRATIVE EDUCATION AND THERAPY</text>
+    
+    <line class="line" x1="100" y1="40" x2="400" y2="40"/>
+  </g>
+</svg>

@@ -1,0 +1,188 @@
+/* Chatbot Container */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: 'Cairo', sans-serif; /* Consistent with website font */
+}
+
+/* Chatbot Button */
+#chatbot-button {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, #007bff, #00ddeb); /* Consistent with website buttons */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#chatbot-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Chatbot Window */
+#chatbot-window {
+    position: absolute;
+    bottom: 80px; /* Adjust based on button size */
+    right: 0;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0); /* Initially hidden */
+    transform-origin: bottom right;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#chatbot-window.open {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background: linear-gradient(90deg, #007bff, #00ddeb); /* Consistent with website header/buttons */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chatbot-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.chatbot-header .close-chatbot {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.chatbot-header .close-chatbot:hover {
+    transform: rotate(90deg);
+}
+
+/* Chatbot Messages Area */
+.chatbot-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Message Bubbles */
+.message-bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.message-bubble.user {
+    background-color: #e0f7fa; /* Light blue, consistent with a calm theme */
+    color: #333;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.message-bubble.ai {
+    background-color: #f0f0f0; /* Light grey */
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+/* Chatbot Input Area */
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+}
+
+.chatbot-input input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    margin-right: 10px; /* For RTL layout */
+}
+
+.chatbot-input input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.chatbot-input button {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.chatbot-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    #chatbot-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #chatbot-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    #chatbot-window {
+        width: calc(100% - 20px); /* Full width minus margins */
+        height: calc(100% - 80px); /* Full height minus button and some margin */
+        bottom: 70px;
+        right: 10px;
+        left: 10px; /* Center on smaller screens */
+    }
+}

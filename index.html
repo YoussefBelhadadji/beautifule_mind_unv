@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>العقل الجميل | منصة تعليمية لعلم النفس</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/chatbot-custom.css">
+		<link rel="stylesheet" href="css/login-modal.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		<!-- Header -->
+		 <header id="header" class="transparent-nav">
+        <div class="container">
+            <div class="navbar-header" style="display: flex; align-items: center; width: 100%; justify-content: space-between; gap: 0; flex-direction: row-reverse;">
+                <div class="navbar-brand" style="margin-right: 0;">
+                    <a class="logo" href="index.html"><img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 50px;"></a>
+                </div>
+                <button class="navbar-toggle"><span></span></button>
+                <nav id="nav">
+                    <ul class="main-menu nav navbar-nav navbar-left">
+                        <li style="display: flex; align-items: center; gap: 8px;">
+                            <button id="open-login-modal" class="main-button-nav" style="background: #ffe08a; color: #444; border-radius: 20px; padding: 8px 22px; font-weight: bold; border:none; cursor:pointer;">تسجيل / دخول</button>
+                            <a href="traitment.html" class="main-button-nav" style="background: linear-gradient(90deg,#007bff,#00ddeb); color: #fff; border-radius: 20px; padding: 8px 22px; font-weight: bold;">علاجنا</a>
+                            <a href="index.html">الرئيسية</a>
+                        </li>
+                        <li><a href="about_us.html">من نحن</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="blog.html">المدونة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <!-- User Profile Dropdown (Initially Hidden) -->
+                        <li style="display: none;" class="user-profile-nav">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img id="user-avatar" src="./pic/utilisateur.png" class="profile-avatar" alt="User Avatar">
+                                <span id="user-display-name"></span> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="profile.html"><i class="fa fa-user"></i> صفحتي الشخصية</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i> الإعدادات</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" id="logout-button"><i class="fa fa-sign-out"></i> تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+		<!-- /Header -->
+
+		<!-- Home -->
+		<div id="home" class="hero-area">
+
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/home-background.jpg)"></div>
+			<!-- /Backgound Image -->
+
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h1 class="white-text">اكتشف أعماق العقل البشري معنا</h1>
+							<p class="lead white-text">انطلق في رحلة لفهم نفسك والآخرين بشكل أعمق. دوراتنا في علم النفس مصممة لتمنحك المعرفة والأدوات اللازمة لحياة أكثر توازناً وإدراكاً.</p>
+							<a class="main-button icon-button" href="contact.html">ابدأ رحلتك الآن!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /Home -->
+
+		<!-- About -->
+		<div id="about" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="section-header">
+							<h2>مرحباً بك في منصة العقل الجميل</h2>
+							<p class="lead">بوابتك الأولى لاستكشاف علم النفس بطريقة علمية وشيقة.</p>
+						</div>
+
+						<!-- feature -->
+						<div class="feature">
+							<i class="feature-icon fa fa-flask"></i>
+							<div class="feature-content">
+								<h4>دورات متخصصة</h4>
+								<p>تعمق في مفاهيم علم النفس المعقدة من خلال محتوى عالي الجودة يمكنك الوصول إليه في أي وقت ومن أي مكان.</p>
+							</div>
+						</div>
+						<!-- /feature -->
+
+						<!-- feature -->
+						<div class="feature">
+							<i class="feature-icon fa fa-users"></i>
+							<div class="feature-content">
+								<h4>خبراء وأكاديميون</h4>
+								<p>تعلم على يد نخبة من الأخصائيين النفسيين والأكاديميين الذين يشاركونك خبراتهم العملية ورؤاهم العميقة.</p>
+							</div>
+						</div>
+						<!-- /feature -->
+
+						<!-- feature -->
+						<div class="feature">
+							<i class="feature-icon fa fa-comments"></i>
+							<div class="feature-content">
+								<h4>مجتمع معرفي</h4>
+								<p>تواصل مع مجتمع من الشغوفين بعلم النفس، شارك أفكارك، واحصل على الدعم في رحلتك التعليمية.</p>
+							</div>
+						</div>
+						<!-- /feature -->
+
+					</div>
+
+					<div class="col-md-6">
+						<div class="about-img">
+							<img src="./img/about.png" alt="عن منصة العقل الجميل">
+						</div>
+					</div>
+
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- container -->
+		</div>
+		<!-- /About -->
+		<!-- Stats Section -->
+		<div id="stats" class="section">
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
+			<!-- /Backgound Image -->
+
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="section-header text-center">
+						<h2 class="white-text">أرقامنا تتحدث عن نجاحنا</h2>
+						<p class="lead white-text">نحن لا نعدك بالتغيير فقط، بل نريك أثره بالأرقام. انضم إلى مجتمعنا الذي ينمو كل يوم.</p>
+					</div>
+				</div>
+				<!-- /row -->
+
+				<!-- row -->
+				<div class="row">
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-users"></i>
+							<h3 class="stat-count" data-target="10000">0</h3>
+							<span class="stat-text">طالب وطالبة</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-smile-o"></i>
+							<h3 class="stat-count" data-target="98">0</h3>
+							<span class="stat-text">نسبة الرضا (%)</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-graduation-cap"></i>
+							<h3 class="stat-count" data-target="7500">0</h3>
+							<span class="stat-text">قصة نجاح</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-globe"></i>
+							<h3 class="stat-count" data-target="15">0</h3>
+							<span class="stat-text">دولة حول العالم</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /Stats Section -->
+		<!-- Courses -->
+		<div id="courses" class="section">
+	<div class="container">
+		<!-- Section Header -->
+		<div class="row">
+			<div class="section-header text-center">
+				<h2>أبرز دوراتنا وتخصصاتنا</h2>
+				<p class="lead">انطلق في رحلة معرفية مع دوراتنا المصممة بعناية لتلبية شغفك.</p>
+			</div>
+		</div>
+		<!-- /row -->
+
+		<!-- Courses Slider -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="courses-slider-wrapper">
+					<!-- Swiper -->
+					<div class="swiper-container featured-courses-slider">
+						<div id="featured-courses-list" class="swiper-wrapper">
+							<!-- Course cards will be inserted here by JavaScript -->
+						</div>
+					</div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-next custom-swiper-arrow"></div>
+					<div class="swiper-button-prev custom-swiper-arrow"></div>
+				</div>
+			</div>
+		</div>
+		<!-- /Courses Slider -->
+
+		<!-- CTA Button -->
+		<div class="row">
+			<div class="center-btn">
+				<a class="main-button icon-button" href="courses.html">استكشف كل الدورات</a>
+			</div>
+		</div>
+	</div>
+</div>
+		<!-- /Courses -->
+
+		<!-- Call To Action -->
+		<div id="cta" class="section">
+
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
+			<!-- /Backgound Image -->
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-6">
+						<h2 class="white-text">هل أنت مستعد لتغيير منظورك للحياة؟</h2>
+						<p class="lead white-text">دوراتنا ليست مجرد معلومات، بل هي أدوات عملية لتطوير الذات وفهم أعمق للطبيعة البشرية.</p>
+						<a class="main-button icon-button" href="courses.html">استكشف الدورات الآن!</a>
+					</div>
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Call To Action -->
+
+		<!-- Why us -->
+		<div id="why-us" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+					<div class="section-header text-center">
+						<h2>لماذا تختار منصة العقل الجميل؟</h2>
+						<p class="lead">نحن نقدم أكثر من مجرد دورات، نحن نبني رحلة معرفية متكاملة.</p>
+					</div>
+
+					<!-- feature -->
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="feature-icon fa fa-flask"></i>
+							<div class="feature-content">
+								<h4>محتوى علمي دقيق</h4>
+								<p>جميع دوراتنا مبنية على أحدث الأبحاث والدراسات في علم النفس لضمان تقديم محتوى موثوق وعالي الجودة.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /feature -->
+
+					<!-- feature -->
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="feature-icon fa fa-users"></i>
+							<div class="feature-content">
+								<h4>خبراء متخصصون</h4>
+								<p>يقدم الدورات نخبة من الأكاديميين والأخصائيين النفسيين الممارسين لضمان الجمع بين النظرية والتطبيق.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /feature -->
+
+					<!-- feature -->
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="feature-icon fa fa-comments"></i>
+							<div class="feature-content">
+								<h4>مجتمع داعم</h4>
+								<p>انضم إلى نقاشات ثرية وتفاعل مع زملائك والمدربين للحصول على تجربة تعليمية تفاعلية ومحفزة.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /feature -->
+
+				</div>
+				<!-- /row -->
+
+				<hr class="section-hr">
+
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-6">
+						<h3>نجمع بين الدقة العلمية والأساليب التعليمية المبتكرة</h3>
+						<p class="lead">في "العقل الجميل"، نؤمن بأن فهم النفس هو الخطوة الأولى نحو تحقيق إمكانياتك الكاملة.</p>
+						<p>لذلك، نصمم دوراتنا لتكون رحلة استكشافية ممتعة، تمنحك المعرفة اللازمة للنمو الشخصي والمهني. كل دورة مصممة بعناية لتكون تفاعلية ومليئة بالتطبيقات العملية التي يمكنك استخدامها مباشرة في حياتك.</p>
+					</div>
+
+					<div class="col-md-5 col-md-offset-1">
+						<a class="about-video" href="#">
+							<img src="./img/about-video.jpg" alt="فيديو تعريفي عن المنصة">
+							<i class="play-icon fa fa-play"></i>
+						</a>
+					</div>
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Why us -->
+		  <hr class="section-hr">
+<!-- Testimonials Section (Modern Split Design) -->
+<div id="testimonials" class="section">
+	<div class="container">
+		<div class="row testimonial-split-layout">
+			
+			<!-- Left Side: Title and Navigation -->
+			<div class="col-md-4 col-sm-12 testimonial-title-area">
+				<div class="section-header">
+					<span class="sub-title">آراء العملاء</span>
+					<h2>ماذا يقولون عنا؟</h2>
+					<p>آراء عملائنا وشركائنا هي شهادة نعتز بها وتدفعنا لتقديم الأفضل دائماً.</p>
+				</div>
+				<!-- Custom Navigation Arrows -->
+				<div class="testimonial-nav">
+					<button class="custom-prev"><i class="fa fa-angle-right"></i></button>
+					<button class="custom-next"><i class="fa fa-angle-left"></i></button>
+				</div>
+			</div>
+
+			<!-- Right Side: Testimonials Slider -->
+			<div class="col-md-8 col-sm-12 testimonial-slider-area">
+				<div id="testimonials-slider-modern" class="owl-carousel owl-theme">
+
+					<!-- Single Testimonial -->
+					<div class="testimonial-modern">
+						<div class="testimonial-content">
+							<p>"منصة العقل الجميل أحدثت نقلة نوعية في طريقة متابعتي للحالات. الأدوات الرقمية والتقارير سهلت عليّ الكثير من العمل ووفرت لي الوقت للتركيز على الجانب العلاجي."</p>
+						</div>
+						<div class="testimonial-meta">
+							<img src="./pic/man.png" alt="أخصائي نفسي">
+							<div class="testimonial-info">
+								<h4 class="testimonial-name">د. أحمد خالد</h4>
+								<span class="testimonial-role">أخصائي نفسي</span>
+							</div>
+						</div>
+					</div>
+					<!-- /Single Testimonial -->
+
+					<!-- Single Testimonial -->
+					<div class="testimonial-modern">
+						<div class="testimonial-content">
+							<p>"لأول مرة أشعر أنني جزء من رحلة علاج ابني. الورشات الموجهة للأولياء كانت مفيدة جداً، والتواصل مع الأخصائي أصبح أسهل بكثير بفضل المنصة."</p>
+						</div>
+						<div class="testimonial-meta">
+							<img src="./pic/woman.png" alt="ولي أمر">
+							<div class="testimonial-info">
+								<h4 class="testimonial-name">سارة العبدالله</h4>
+								<span class="testimonial-role">ولي أمر</span>
+							</div>
+						</div>
+					</div>
+					<!-- /Single Testimonial -->
+					
+					<!-- Single Testimonial -->
+					<div class="testimonial-modern">
+						 <div class="testimonial-content">
+							<p>"الدورات التدريبية المقدمة على المنصة ذات جودة عالية ومحتوى علمي دقيق. استفدت كثيراً من خبرات المدربين وتطبيقاتهم العملية."</p>
+						</div>
+						<div class="testimonial-meta">
+							<img src="./pic/bussiness-man.png" alt="متدرب">
+							<div class="testimonial-info">
+								<h4 class="testimonial-name">علي حسن</h4>
+								<span class="testimonial-role">طالب علم نفس</span>
+							</div>
+						</div>
+					</div>
+					<!-- /Single Testimonial -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+			<!-- Separator and Form -->
+		<hr class="section-hr">
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="section-header text-center">
+					<h3>شاركنا تجربتك</h3>
+					<p>رأيك يهمنا ويساعدنا على التطور وخدمة الآخرين بشكل أفضل.</p>
+				</div>
+				
+				<!-- Review Submission Form -->
+				<form id="review-form">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="input" type="text" name="name" placeholder="الاسم الكامل" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							 <div class="form-group">
+								<input class="input" type="text" name="role" placeholder="صفتك (مثال: ولي أمر، أخصائي)" required>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea class="input" name="review" placeholder="اكتب رأيك هنا..." rows="5" required></textarea>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="main-button icon-button">إرسال الرأي</button>
+					</div>
+				</form>
+				
+				<!-- Success Message (Initially Hidden) -->
+				<div id="review-form-success" style="display:none; text-align:center; margin-top:20px; padding: 20px; background: #f0f9f4; border: 1px solid #A8D5BA; border-radius: 8px;">
+					<h4 style="color: #374050; margin-top:0;">شكراً جزيلاً لك!</h4>
+					<p style="color: #374050; margin-bottom:0;">تم استلام رأيك بنجاح. نحن نقدر مساهمتك القيمة.</p>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- /Testimonials Section -->
+		<!-- Team -->
+		<!-- Team -->
+		<div id="team" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="section-header text-center">
+						<h2>فريقنا المتميز</h2>
+						<p class="lead">نخبة من المتخصصين يعملون معاً لتقديم أفضل تجربة تعليمية</p>
+					</div>
+					<div class="container_team">
+					<!-- team member -->
+					<div class="col-md-4">
+						<div class="team-member">
+							<div class="member-img">
+								<img src="./img/woman.png" alt="د. سارة الأحمد">
+								<div class="member-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+							<h4>زروال نصيرة</h4>
+							<span>مديرة المنصة والمحتوى التعليمي</span>
+							<p>دكتوراه في علم النفس الإكلينيكي مع خبرة 15 عاماً في التدريس والعلاج النفسي</p>
+						</div>
+					</div>
+					<!-- /team member -->
+					<!-- team member -->
+					<div class="col-md-4">
+						<div class="team-member">
+							<div class="member-img">
+								<img src="./img/woman_2.png" alt="أ. نور الهاشمي">
+								<div class="member-social">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+							<h4>لعريقي أمينة</h4>
+							<span>مستشارة نفسية</span>
+							<p>متخصصة في الإرشاد النفسي والأسري مع خبرة 10 سنوات في العلاج النفسي</p>
+						</div>
+					</div>
+					<!-- /team member -->
+				</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /Team -->
+
+		<!-- Contact CTA -->
+		<div id="contact-cta" class="section">
+
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+			<!-- Backgound Image -->
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h2 class="white-text">لديك استفسار؟</h2>
+						<p class="lead white-text">فريقنا من الخبراء جاهز للإجابة على جميع أسئلتك ومساعدتك في اختيار رحلتك التعليمية القادمة.</p>
+						<a class="main-button icon-button" href="contact.html">تواصل معنا الآن</a>
+					</div>
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Contact CTA -->
+
+<!-- Footer (The "Golden Touch" Redesign) -->
+
+<footer id="footer" class="section">
+	<!-- Golden CTA Bar -->
+	<div class="footer-cta-bar">
+		<div class="container">
+			<p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+		</div>
+	</div>
+
+	<!-- Main Footer Content -->
+	<div class="main-footer-content">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- Column 1: Logo & About -->
+				<div class="col-md-4 col-sm-12 footer-about">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<!-- تعليق: قمت بتكبير الشعار قليلاً -->
+								<img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+							</a>
+						</div>
+						<p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+						<ul class="footer-social-top">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="col-md-2 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">روابط سريعة</h4>
+						<ul class="widget-links">
+							<li><a href="about-us.html">من نحن</a></li>
+							<li><a href="courses.html">الدورات</a></li>
+							<li><a href="blog.html">المدونة</a></li>
+							<li><a href="contact.html">اتصل بنا</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Column 3: Important Links -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">معلومات هامة</h4>
+						<ul class="widget-links">
+							<li><a href="#">الأسئلة الشائعة</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">شروط الاستخدام</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 4: Newsletter -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">النشرة البريدية</h4>
+						<p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+						<form class="newsletter-form">
+							<input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+							<button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<!-- Bottom Footer Bar -->
+	<div id="bottom-footer" class="text-center">
+		<div class="container">
+			<div class="footer-copyright">
+				<span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	
+<!-- /Footer -->
+		<!-- preloader -->
+		<div id='preloader'><div class='preloader'></div></div>
+		<!-- /preloader -->
+
+   <!-- Chatbot Widget -->
+    <div id="chatbot-container">
+        <div id="chatbot-button">
+            <i class="fa fa-comment"></i>
+        </div>
+        <div id="chatbot-window">
+            <div class="chatbot-header">
+                <h3>مساعدك الذكي</h3>
+                <span class="close-chatbot">&times;</span>
+            </div>
+            <div class="chatbot-messages"></div>
+            <div class="chatbot-input">
+                <input type="text" placeholder="اكتب رسالتك هنا...">
+                <button id="send-message"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal Component (Glassmorphism, Arabic, Responsive, Site Colors) -->
+    <div id="login-modal-overlay" tabindex="-1" aria-hidden="true" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,34,40,0.45); z-index:9999; justify-content:center; align-items:center; transition:background 0.3s;">
+      <div id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title" style="background:rgba(255,255,255,0.25); box-shadow:0 8px 32px 0 rgba(31,38,135,0.18); backdrop-filter:blur(16px) saturate(180%); -webkit-backdrop-filter:blur(16px) saturate(180%); border-radius:22px; padding:36px 28px 28px 28px; min-width:320px; max-width:90vw; width:350px; position:relative; display:flex; flex-direction:column; align-items:center;">
+        <button id="close-login-modal" aria-label="إغلاق" style="position:absolute; top:18px; left:18px; background:none; border:none; font-size:1.6em; color:#444; cursor:pointer;">&times;</button>
+        <h2 id="login-modal-title" style="font-family:'Cairo',system-ui,sans-serif; color:#222; font-size:1.3em; margin-bottom:18px;">تسجيل الدخول</h2>
+        <form id="login-form" style="width:100%; display:flex; flex-direction:column; gap:18px;">
+          <label for="login-email" style="font-size:1em; color:#333;">البريد الإلكتروني</label>
+          <input id="login-email" name="email" type="email" autocomplete="username" required style="padding:10px 14px; border-radius:12px; border:1px solid #e3e8ee; background:rgba(255,255,255,0.7); font-size:1em; font-family:'Cairo',system-ui,sans-serif; outline:none; transition:border 0.2s;">
+          <label for="login-password" style="font-size:1em; color:#333;">كلمة المرور</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required style="padding:10px 14px; border-radius:12px; border:1px solid #e3e8ee; background:rgba(255,255,255,0.7); font-size:1em; font-family:'Cairo',system-ui,sans-serif; outline:none; transition:border 0.2s;">
+          <div style="display:flex; gap:10px; margin-top:18px;">
+            <button type="submit" style="flex:1; background:linear-gradient(90deg,#007bff,#00ddeb); color:#fff; border:none; border-radius:16px; padding:10px 0; font-size:1em; font-family:'Cairo',system-ui,sans-serif; font-weight:bold; cursor:pointer; transition:background 0.2s;">دخول</button>
+            <button type="button" id="create-account-btn" style="flex:1; background:#ffe08a; color:#444; border:none; border-radius:16px; padding:10px 0; font-size:1em; font-family:'Cairo',system-ui,sans-serif; font-weight:bold; cursor:pointer; transition:background 0.2s;">إنشاء حساب جديد</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Login Modal Component -->
+
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- <<< أضف هذا السطر هنا >>> -->
+<script type="text/javascript" src="js/course-data.js"></script> 
+	<!-- أضف هذا السطر هنا -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Chatbot Widget Loader -->
+	<script src="js/chatbot-custom.js"></script>
+	<script>
+	// Modal logic
+	const openModalBtn = document.getElementById('open-login-modal');
+	const modalOverlay = document.getElementById('login-modal-overlay');
+	const closeModalBtn = document.getElementById('close-login-modal');
+	const createAccountBtn = document.getElementById('create-account-btn');
+
+	if(openModalBtn && modalOverlay && closeModalBtn && createAccountBtn) {
+	  openModalBtn.addEventListener('click', () => {
+	    modalOverlay.style.display = 'flex';
+	    setTimeout(()=>{modalOverlay.focus();}, 10);
+	  });
+	  closeModalBtn.addEventListener('click', () => {
+	    modalOverlay.style.display = 'none';
+	  });
+	  modalOverlay.addEventListener('click', (e) => {
+	    if(e.target === modalOverlay) modalOverlay.style.display = 'none';
+	  });
+	  createAccountBtn.addEventListener('click', () => {
+	    window.location.href = 'contact.html';
+	  });
+	  // Keyboard accessibility
+	  modalOverlay.addEventListener('keydown', (e) => {
+	    if(e.key === 'Escape') modalOverlay.style.display = 'none';
+	  });
+	}
+	</script>
+</body>
+</html>

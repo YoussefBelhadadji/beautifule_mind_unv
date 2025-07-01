@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>علاجنا | العقل الجميل</title>
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    
+    
+    <!-- تم نقل كود CSS الخاص بصفحة علاجنا إلى style.css -->
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="navbar-header" style="display: flex; align-items: center; width: 100%; justify-content: space-between; gap: 0; flex-direction: row-reverse;">
+                <div class="navbar-brand" style="margin-right: 0;">
+                    <a class="logo" href="index.html"><img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 50px;"></a>
+                </div>
+                <button class="navbar-toggle"><span></span></button>
+                <nav id="nav">
+                    <ul class="main-menu nav navbar-nav navbar-left" style="display: flex; align-items: center; gap: 18px; margin: 0 0 0 auto;">
+                        <li style="display: flex; align-items: center; gap: 8px;">
+                            <a href="contact.html" class="main-button-nav" style="background: #ffe08a; color: #444; border-radius: 20px; padding: 8px 22px; font-weight: bold;">تسجيل / دخول</a>
+                            <a href="traitment.html" class="main-button-nav" style="background: linear-gradient(90deg,#007bff,#00ddeb); color: #fff; border-radius: 20px; padding: 8px 22px; font-weight: bold;">علاجنا</a>
+                            <a href="index.html">الرئيسية</a>
+                        </li>
+                        <li><a href="about_us.html">من نحن</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="blog.html">المدونة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <!-- User Profile Dropdown (Initially Hidden) -->
+                        <li style="display: none;" class="user-profile-nav">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img id="user-avatar" src="./pic/utilisateur.png" class="profile-avatar" alt="User Avatar">
+                                <span id="user-display-name"></span> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="profile.html"><i class="fa fa-user"></i> صفحتي الشخصية</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i> الإعدادات</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" id="logout-button"><i class="fa fa-sign-out"></i> تسجيل الخروج</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <section class="treatment-center-hero">
+        <div class="container">
+            <h1>مركز علاجنا</h1>
+            <p style="font-size:1.2em; margin-top: 12px;">اكتشف أفضل طرق العلاج النفسي والبرامج المتخصصة لدينا. يمكنك شراء العلاج المناسب لك مباشرة من هنا.</p>
+        </div>
+    </section>
+
+    <section class="treatment-list-section">
+        <div class="container">
+            <div class="treatment-list">
+                <div class="treatment-card">
+                    <img src="img/doctor.png" alt="علاج فردي">
+                    <div class="treatment-title">برنامج علاج فردي</div>
+                    <div class="treatment-desc">جلسة خاصة مع أخصائي نفسي معتمد لمساعدتك في تجاوز التحديات الشخصية.</div>
+                    <button class="buy-btn">شراء الآن</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/woman_2.png" alt="علاج جماعي">
+                    <div class="treatment-title">برنامج علاج جماعي</div>
+                    <div class="treatment-desc">برنامج تفاعلي مع مجموعة دعم بإشراف مختصين، لتعزيز الصحة النفسية والتواصل.</div>
+                    <button class="buy-btn">شراء الآن</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/cta2-background.jpg" alt="استشارة أونلاين">
+                    <div class="treatment-title">استشارة أونلاين</div>
+                    <div class="treatment-desc">تواصل مع خبرائنا عبر الإنترنت من أي مكان بسرية وخصوصية تامة.</div>
+                    <button class="buy-btn">مجانا</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/about.png" alt="برنامج علاج متكامل">
+                    <div class="treatment-title">برنامج علاج متكامل</div>
+                    <div class="treatment-desc">خطة علاجية شاملة مصممة خصيصاً لك تشمل جلسات فردية وجماعية واستشارات.</div>
+                    <a href="treatment-program.html" class="buy-btn">شراء الان</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <footer id="footer" class="section">
+    <!-- Golden CTA Bar -->
+    <div class="footer-cta-bar">
+        <div class="container">
+            <p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="main-footer-content">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <!-- Column 1: Logo & About -->
+                <div class="col-md-4 col-sm-12 footer-about">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="logo" href="index.html">
+                                <!-- تعليق: قمت بتكبير الشعار قليلاً -->
+                                <img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+                            </a>
+                        </div>
+                        <p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+                        <ul class="footer-social-top">
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">روابط سريعة</h4>
+                        <ul class="widget-links">
+                            <li><a href="about-us.html">من نحن</a></li>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="blog.html">المدونة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Important Links -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">معلومات هامة</h4>
+                        <ul class="widget-links">
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">النشرة البريدية</h4>
+                        <p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+                        <form class="newsletter-form">
+                            <input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Bottom Footer Bar -->
+    <div id="bottom-footer" class="text-center">
+        <div class="container">
+            <div class="footer-copyright">
+                <span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

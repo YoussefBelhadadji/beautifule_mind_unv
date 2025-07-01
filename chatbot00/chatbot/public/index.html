@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Chatbot</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #2a2a4a);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    /* النقطة في الأسفل */
+    #chat-toggle {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(90deg, #007bff, #00ddeb);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 221, 235, 0.5);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    #chat-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    /* نافذة الدردشة */
+    #chat-window {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      transition: bottom 0.7s ease;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    #chat-window.open {
+      bottom: 0;
+    }
+
+    #chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .user-message, .ai-response {
+      max-width: 70%;
+      margin: 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      animation: slideIn 0.3s ease-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
+    .user-message {
+      background: linear-gradient(90deg, #007bff, #00ddeb);
+      text-align: right;
+      margin-left: auto;
+      color: #fff;
+    }
+
+    .ai-response {
+      background: linear-gradient(90deg, #28a745, #20c997);
+      text-align: left;
+      margin-right: auto;
+      color: #fff;
+    }
+
+    #input-container {
+      display: flex;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    #input-box {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 25px 0 0 25px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1em;
+      outline: none;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #input-box:focus {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 15px rgba(0, 221, 235, 0.5);
+    }
+
+    #send-button {
+      padding: 15px 25px;
+      background: linear-gradient(90deg, #007bff, #00ddeb);
+      border: none;
+      border-radius: 0 25px 25px 0;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    #send-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 221, 235, 0.7);
+    }
+
+    .thinking {
+      display: flex;
+      align-items: center;
+      max-width: 70%;
+      margin: 10px;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: left;
+      margin-right: auto;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    .thinking-ball {
+      width: 10px;
+      height: 10px;
+      background: #00ddeb;
+      border-radius: 50%;
+      margin-right: 10px;
+      animation: bounce 1s infinite;
+    }
+
+    /* التحريكات */
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 600px) {
+      #chat-window {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-toggle">+</div>
+  <div id="chat-window">
+    <div id="chat-container"></div>
+    <div id="input-container">
+      <input type="text" id="input-box" placeholder="Ask me anything..." />
+      <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const inputBox = document.getElementById("input-box");
+    const chatContainer = document.getElementById("chat-container");
+    const chatToggle = document.getElementById("chat-toggle");
+    const chatWindow = document.getElementById("chat-window");
+
+    // تبديل نافذة الدردشة
+    chatToggle.addEventListener("click", () => {
+      chatWindow.classList.toggle("open");
+    });
+
+    function sendMessage() {
+      const message = inputBox.value.trim();
+      if (!message) return;
+
+      chatContainer.innerHTML += `<div class="user-message">${message}</div>`;
+      inputBox.value = "";
+
+      const thinkingDiv = document.createElement("div");
+      thinkingDiv.className = "thinking";
+      thinkingDiv.innerHTML = `<span class="thinking-ball"></span>Thinking...`;
+      chatContainer.appendChild(thinkingDiv);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+
+      fetch("/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          chatContainer.removeChild(thinkingDiv);
+          chatContainer.innerHTML += `<div class="ai-response">${data.response}</div>`;
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          chatContainer.removeChild(thinkingDiv);
+          chatContainer.innerHTML += `<div class="ai-response">Error occurred!</div>`;
+        });
+    }
+
+    inputBox.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
