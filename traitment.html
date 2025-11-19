@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>علاجنا | العقل الجميل</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    
+    
+    <!-- تم نقل كود CSS الخاص بصفحة علاجنا إلى style.css -->
+</head>
+<body>
+    <!-- Page Loading Progress Bar -->
+    <div id="pageLoadingBar" class="page-loading-bar"></div>
+    <!-- ========== Navbar الاحترافي الجديد ========== -->
+<nav class="modern-navbar" id="modernNavbar">
+	<div class="navbar-container">
+		<div class="navbar-brand">
+			<a href="index.html" class="brand-link">
+				<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+				<span class="brand-text">Beautiful Mind</span>
+			</a>
+		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="nav-cta">
+			<!-- Dark Mode Toggle -->
+			<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+				<i class="fa fa-moon-o dark-icon"></i>
+				<i class="fa fa-sun-o light-icon"></i>
+			</button>
+
+			<button id="open-login-modal" class="cta-btn cta-login">
+				<i class="fa fa-user"></i>
+				<span>تسجيل الدخول</span>
+			</button>
+			<a href="traitment.html" class="cta-btn cta-primary">
+				<i class="fa fa-heart"></i>
+				<span>علاجنا</span>
+			</a>
+		</div>
+		<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+		</button>
+	</div>
+	<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="mobile-menu-header">
+			<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+			<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<ul class="mobile-nav-links">
+			<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="mobile-cta">
+			<!-- Dark Mode Toggle Mobile -->
+			<button id="darkModeToggleMobile" class="mobile-dark-mode-toggle">
+				<i class="fa fa-moon-o dark-icon"></i>
+				<i class="fa fa-sun-o light-icon"></i>
+				<span class="dark-mode-text">الوضع الليلي</span>
+			</button>
+
+			<button id="mobile-login-btn" class="mobile-cta-btn">
+				<i class="fa fa-user"></i> تسجيل الدخول
+			</button>
+			<a href="traitment.html" class="mobile-cta-btn primary">
+				<i class="fa fa-heart"></i> علاجنا
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- ========== نهاية Navbar ========== -->
+    <!-- /Header -->
+
+    <section class="treatment-center-hero">
+        <div class="container">
+            <h1>مركز علاجنا</h1>
+            <p style="font-size:1.2em; margin-top: 12px;">اكتشف أفضل طرق العلاج النفسي والبرامج المتخصصة لدينا. يمكنك شراء العلاج المناسب لك مباشرة من هنا.</p>
+        </div>
+    </section>
+
+    <section class="treatment-list-section">
+        <div class="container">
+            <div class="treatment-list">
+                <div class="treatment-card">
+                    <img src="img/doctor.png" alt="علاج فردي">
+                    <div class="treatment-title">برنامج علاج فردي</div>
+                    <div class="treatment-desc">جلسة خاصة مع أخصائي نفسي معتمد لمساعدتك في تجاوز التحديات الشخصية.</div>
+                    <button class="buy-btn">شراء الآن</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/woman_2.png" alt="علاج جماعي">
+                    <div class="treatment-title">برنامج علاج جماعي</div>
+                    <div class="treatment-desc">برنامج تفاعلي مع مجموعة دعم بإشراف مختصين، لتعزيز الصحة النفسية والتواصل.</div>
+                    <button class="buy-btn">شراء الآن</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/cta2-background.jpg" alt="استشارة أونلاين">
+                    <div class="treatment-title">استشارة أونلاين</div>
+                    <div class="treatment-desc">تواصل مع خبرائنا عبر الإنترنت من أي مكان بسرية وخصوصية تامة.</div>
+                    <button class="buy-btn">مجانا</button>
+                </div>
+                <div class="treatment-card">
+                    <img src="img/about.png" alt="برنامج علاج متكامل">
+                    <div class="treatment-title">برنامج علاج متكامل</div>
+                    <div class="treatment-desc">خطة علاجية شاملة مصممة خصيصاً لك تشمل جلسات فردية وجماعية واستشارات.</div>
+                    <a href="treatment-program.html" class="buy-btn">شراء الان</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <footer id="footer" class="section">
+    <!-- Golden CTA Bar -->
+    <div class="footer-cta-bar">
+        <div class="container">
+            <p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="main-footer-content">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <!-- Column 1: Logo & About -->
+                <div class="col-md-4 col-sm-12 footer-about">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="logo" href="index.html">
+                                <!-- تعليق: قمت بتكبير الشعار قليلاً -->
+                                <img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+                            </a>
+                        </div>
+                        <p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+                        <ul class="footer-social-top">
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">روابط سريعة</h4>
+                        <ul class="widget-links">
+                            <li><a href="about-us.html">من نحن</a></li>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="blog.html">المدونة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Important Links -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">معلومات هامة</h4>
+                        <ul class="widget-links">
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">النشرة البريدية</h4>
+                        <p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+                        <form class="newsletter-form">
+                            <input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Bottom Footer Bar -->
+    <div id="bottom-footer" class="text-center">
+        <div class="container">
+            <div class="footer-copyright">
+                <span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Dark Mode & Loading Animations -->
+    <script type="text/javascript" src="js/dark-mode-loading.js"></script>
+</body>
+</html>

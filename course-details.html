@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<title>تفاصيل الدورة | العقل الجميل</title>
+		<!-- CSS Links -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+	</head>
+	<body>
+		<!-- ========== Navbar الاحترافي الجديد ========== -->
+<nav class="modern-navbar" id="modernNavbar">
+	<div class="navbar-container">
+		<div class="navbar-brand">
+			<a href="index.html" class="brand-link">
+				<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+			</a>
+		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="nav-link active">الدورات</a></li>
+			<li><a href="blog.html" class="nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="nav-cta">
+			<button id="open-login-modal" class="cta-btn cta-login">
+				<i class="fa fa-user"></i>
+				<span>تسجيل الدخول</span>
+			</button>
+			<a href="traitment.html" class="cta-btn cta-primary">
+				<i class="fa fa-heart"></i>
+				<span>علاجنا</span>
+			</a>
+		</div>
+		<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+		</button>
+	</div>
+	<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="mobile-menu-header">
+			<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+			<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<ul class="mobile-nav-links">
+			<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="mobile-cta">
+			<button id="mobile-login-btn" class="mobile-cta-btn">
+				<i class="fa fa-user"></i> تسجيل الدخول
+			</button>
+			<a href="traitment.html" class="mobile-cta-btn primary">
+				<i class="fa fa-heart"></i> علاجنا
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- ========== نهاية Navbar ========== -->
+		<!-- /Header -->
+
+		<!-- Course Hero Area -->
+		<div class="course-hero-area section">
+			<div id="hero-bg" class="bg-image bg-parallax overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="hero-area-tree">
+							<li><a href="index.html">الرئيسية</a></li>
+							<li><a href="courses.html">الدورات</a></li>
+							<li id="hero-category"></li>
+						</ul>
+						<h1 id="hero-title" class="white-text"></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Course Hero Area -->
+
+		<!-- Main Course Content -->
+		<div id="course-details-page" class="section">
+			<div class="container">
+				<div class="row">
+					<!-- Main Content -->
+					<div class="col-md-8">
+						<!-- What you'll learn -->
+						<div class="course-section">
+							<h3 class="section-title">ماذا ستتعلم في هذه الدورة؟</h3>
+							<div id="learning-outcomes" class="row"></div>
+						</div>
+						<!-- Course Description -->
+						<div class="course-section">
+							<h3 class="section-title">وصف الدورة</h3>
+							<p id="course-description"></p>
+						</div>
+						<!-- Instructor section -->
+						<div class="course-section">
+							<div class="media instructor-info">
+								<div class="media-body">
+									<h4 id="instructor-name" class="media-heading"></h4>
+									<p id="instructor-bio"></p>
+								</div>
+							</div>
+						</div>
+						<!-- Student Feedback Section -->
+						<div class="course-section">
+							<h3 class="section-title">تقييمات الطلاب</h3>
+							<div class="student-feedback">
+								<div class="row">
+									<div class="col-md-3 text-center"><div class="average-rating">4.8</div><div class="star-rating large" data-rating="4.8"></div><span>متوسط التقييم</span></div>
+									<div class="col-md-9"><div class="rating-breakdown"></div></div>
+								</div>
+							</div>
+							<hr>
+							<div class="reviews-list">
+								<div class="review-item"><div class="review-meta"><img src="./pic/man.png" alt=""><div class="review-info"><h4>أحمد خالد</h4><div class="star-rating" data-rating="5"></div></div></div><p>دورة ممتازة ومحتوى قيم جداً. الشرح كان واضحاً ومبسطاً.</p></div>
+								<div class="review-item"><div class="review-meta"><img src="./pic/woman.png" alt=""><div class="review-info"><h4>فاطمة علي</h4><div class="star-rating" data-rating="4"></div></div></div><p>استفدت كثيراً، لكن كنت أتمنى وجود أمثلة أكثر.</p></div>
+							</div>
+							<div class="review-form-wrapper">
+								<h4>أضف تقييمك</h4>
+								<form id="course-review-form"><div class="form-group"><label>تقييمك:</label><div class="user-star-rating"><i class="fa fa-star-o" data-value="1"></i><i class="fa fa-star-o" data-value="2"></i><i class="fa fa-star-o" data-value="3"></i><i class="fa fa-star-o" data-value="4"></i><i class="fa fa-star-o" data-value="5"></i></div><input type="hidden" name="rating" id="user-rating-value" required></div><textarea class="input" placeholder="اكتب تعليقك هنا..." rows="3" required></textarea><button class="main-button">إرسال التقييم</button></form>
+							</div>
+						</div>
+						<!-- /Student Feedback Section -->
+					</div>
+					<!-- Sidebar -->
+					<<!-- Sidebar -->
+						<div class="col-md-4">
+							<div id="course-sidebar-sticky">
+								<div class="course-sidebar">
+									<div class="course-video">
+										<img id="sidebar-image" src="" alt="">
+									</div>
+									<h3 id="sidebar-price" class="course-price"></h3> <!-- <<< تم التعديل هنا: أضفنا ID وحذفنا المحتوى -->
+									<button id="enroll-button" class="main-button btn-block">سجل الآن</button>
+									<div class="course-meta-info">30 يوم ضمان استرجاع الأموال</div>
+									<h4>مميزات الدورة</h4>
+									<ul class="course-features">
+										<!-- المميزات ستتم إضافتها بواسطة JS -->
+									</ul>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Main Course Content -->
+		
+		<!-- Footer -->
+	<footer id="footer" class="section">
+	<!-- Golden CTA Bar -->
+	<div class="footer-cta-bar">
+		<div class="container">
+			<p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+		</div>
+	</div>
+
+	<!-- Main Footer Content -->
+	<div class="main-footer-content">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- Column 1: Logo & About -->
+				<div class="col-md-4 col-sm-12 footer-about">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<!-- تعليق: قمت بتكبير الشعار قليلاً -->
+								<img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+							</a>
+						</div>
+						<p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+						<ul class="footer-social-top">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="col-md-2 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">روابط سريعة</h4>
+						<ul class="widget-links">
+							<li><a href="about-us.html">من نحن</a></li>
+							<li><a href="courses.html">الدورات</a></li>
+							<li><a href="blog.html">المدونة</a></li>
+							<li><a href="contact.html">اتصل بنا</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Column 3: Important Links -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">معلومات هامة</h4>
+						<ul class="widget-links">
+							<li><a href="#">الأسئلة الشائعة</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">شروط الاستخدام</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 4: Newsletter -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">النشرة البريدية</h4>
+						<p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+						<form class="newsletter-form">
+							<input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+							<button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<!-- Bottom Footer Bar -->
+	<div id="bottom-footer" class="text-center">
+		<div class="container">
+			<div class="footer-copyright">
+				<span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+		<!-- /Footer -->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+		<script type="text/javascript" src="js/course-data.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

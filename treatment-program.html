@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>البرنامج العلاجي المتكامل | العقل الجميل</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!-- تم نقل كود CSS الخاص بصفحة البرنامج العلاجي المتكامل إلى style.css -->
+</head>
+<body>
+    <!-- ========== Navbar الاحترافي الجديد ========== -->
+<nav class="modern-navbar" id="modernNavbar">
+	<div class="navbar-container">
+		<div class="navbar-brand">
+			<a href="index.html" class="brand-link">
+				<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+				<span class="brand-text">Beautiful Mind</span>
+			</a>
+		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="nav-cta">
+			<button id="open-login-modal" class="cta-btn cta-login">
+				<i class="fa fa-user"></i>
+				<span>تسجيل الدخول</span>
+			</button>
+			<a href="traitment.html" class="cta-btn cta-primary">
+				<i class="fa fa-heart"></i>
+				<span>علاجنا</span>
+			</a>
+		</div>
+		<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+		</button>
+	</div>
+	<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="mobile-menu-header">
+			<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+			<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<ul class="mobile-nav-links">
+			<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="mobile-cta">
+			<button id="mobile-login-btn" class="mobile-cta-btn">
+				<i class="fa fa-user"></i> تسجيل الدخول
+			</button>
+			<a href="traitment.html" class="mobile-cta-btn primary">
+				<i class="fa fa-heart"></i> علاجنا
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- ========== نهاية Navbar ========== -->
+    <!-- /Header -->
+
+    <section class="treatment-program-hero">
+        <div class="container">
+            <h1>البرنامج العلاجي المتكامل</h1>
+            <p style="font-size:1.2em; margin-top: 12px;">جدول جلسات البرنامج العلاجي المتكامل لجميع الأسابيع، مع تفاصيل الأنشطة والأهداف العلاجية.</p>
+        </div>
+    </section>
+
+    <section class="treatment-program-table-section">
+        <div class="treatment-program-table-container">
+            <table class="treatment-program-table">
+                <thead>
+                    <tr>
+                        <th>الأسبوع</th>
+                        <th>اليوم</th>
+                        <th>الجانب</th>
+                        <th>النشاط العلاجي</th>
+                        <th>المدة</th>
+                        <th>الهدف العلاجي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- مثال: الأسبوع الأول -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الأول</td></tr>
+                    <tr>
+                        <td rowspan="3">الأول</td>
+                        <td>الأحد</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>وحدة علاجية: مسار الحواس</td>
+                        <td>45 د</td>
+                        <td>تنمية الحس الحركي وتعزيز الانتباه الحسي</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>جلسة علاجية: التوازن، المشي، القفز</td>
+                        <td>45 د</td>
+                        <td>تحسين التوازن والتآزر الحركي</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>تدريب على تقليد الحركات البسيطة</td>
+                        <td>45 د</td>
+                        <td>تعزيز التقليد الحركي واللفظي</td>
+                    </tr>
+                    <!-- الأسبوع الثاني -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الثاني</td></tr>
+                    <tr>
+                        <td rowspan="3">الثاني</td>
+                        <td>الأحد</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>نشاط مشترك: القفز على الترامبولين</td>
+                        <td>45 د</td>
+                        <td>تحسين التآزر الحركي والتوازن</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>جلسة علاجية: تمارين التوازن والمرونة</td>
+                        <td>45 د</td>
+                        <td>تعزيز المرونة الجسدية</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>تدريب على التواصل البصري</td>
+                        <td>45 د</td>
+                        <td>تعزيز التواصل البصري والاجتماعي</td>
+                    </tr>
+                    <!-- الأسبوع الثالث -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الثالث</td></tr>
+                    <tr>
+                        <td rowspan="3">الثالث</td>
+                        <td>الأحد</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>نقل حبوب لمسؤوليات وتحكم في المعدلات</td>
+                        <td>45 د</td>
+                        <td>تحسين اللغة والتحكم في الانفعالات</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>زيادة القدرة العضلية</td>
+                        <td>45 د</td>
+                        <td>تنمية الاستقلالية الذاتية</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>تعليم تنفيذ العادات باستخدام الصور</td>
+                        <td>45 د</td>
+                        <td>تعزيز الاستقلالية الذاتية</td>
+                    </tr>
+                    <!-- الأسبوع الرابع -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الرابع</td></tr>
+                    <tr>
+                        <td rowspan="3">الرابع</td>
+                        <td>الأحد</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>تعزيز المهارات الحركية الدقيقة</td>
+                        <td>45 د</td>
+                        <td>تحسين المهارات الحركية الدقيقة</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>تعزيز القوة العضلية وتطوير القوة البدنية</td>
+                        <td>45 د</td>
+                        <td>تعزيز القوة البدنية</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>الزحف الحركي تحت جمل منخفضة</td>
+                        <td>45 د</td>
+                        <td>تطوير التآزر الحركي المتقدم</td>
+                    </tr>
+                    <!-- الأسبوع الخامس -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الخامس</td></tr>
+                    <tr>
+                        <td rowspan="3">الخامس</td>
+                        <td>الأحد</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>بناء الجدار (قطع ثلاثية صغيرة)</td>
+                        <td>45 د</td>
+                        <td>بناء التكامل الاجتماعي الحركي</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التكامل الحسي</td>
+                        <td>مساعدة في بناء الأبراج وتبديل الأدوار (لعبة جماعية)</td>
+                        <td>45 د</td>
+                        <td>تعزيز التكامل الحسي والاجتماعي</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>جلسة علاجية: تقليد حركات جديدة</td>
+                        <td>45 د</td>
+                        <td>تعزيز التقليد الحركي والاجتماعي</td>
+                    </tr>
+                    <!-- الأسبوع السادس -->
+                    <tr class="week-header"><td colspan="6">الأسبوع السادس</td></tr>
+                    <tr>
+                        <td rowspan="3">السادس</td>
+                        <td>الأحد</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>تعزيز الوعي الجسدي والإحساس بالضغط الطبي على أطراف الطفل</td>
+                        <td>45 د</td>
+                        <td>تعزيز الوعي الجسدي والحسي</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>تنظيم السلوك وتحسين التركيز</td>
+                        <td>45 د</td>
+                        <td>تحسين التركيز والانتباه</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>تنفيذ الحركات عبر المرآة</td>
+                        <td>45 د</td>
+                        <td>تعزيز التقليد الحركي</td>
+                    </tr>
+                    <!-- الأسبوع السابع -->
+                    <tr class="week-header"><td colspan="6">الأسبوع السابع</td></tr>
+                    <tr>
+                        <td rowspan="3">السابع</td>
+                        <td>الأحد</td>
+                        <td>التأهيل الحسي الحركي</td>
+                        <td>نشاط مراجعة محفزة مع تحفيز ذهني</td>
+                        <td>45 د</td>
+                        <td>تعزيز الدافعية والاحتفاظ بالمكتسبات</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>تكامل حسي حركي</td>
+                        <td>رسم الحركات عبر المرآة</td>
+                        <td>45 د</td>
+                        <td>تعزيز التقليد الحركي</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>ABA</td>
+                        <td>عرض المهارات المكتسبة (br)</td>
+                        <td>45 د</td>
+                        <td>تعزيز المهارات المكتسبة</td>
+                    </tr>
+                    <!-- الأسبوع الثامن -->
+                    <tr class="week-header"><td colspan="6">الأسبوع الثامن</td></tr>
+                    <tr>
+                        <td rowspan="3">الثامن</td>
+                        <td>الأحد</td>
+                        <td>حول الطفل</td>
+                        <td>استعراض أنشطة مختارة من البرنامج (اختبار طفل)</td>
+                        <td>45 د</td>
+                        <td>دعم اللغة والنطق والاحتفاظ بالمكتسبات</td>
+                    </tr>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>التكامل الاجتماعي / العلاجي</td>
+                        <td>تعزيز التعبير العاطفي والفهم الاجتماعي</td>
+                        <td>45 د</td>
+                        <td>تعزيز التعبير العاطفي والاجتماعي</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>الدعم النفسي الحركي / التعزيز</td>
+                        <td>تكرار أنشطة البرنامج (أكثر المهام التي نجح فيها الطفل خلال البرنامج)</td>
+                        <td>45 د</td>
+                        <td>تعزيز الثبات والتكرار الإيجابي</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer id="footer" class="section">
+    <!-- Golden CTA Bar -->
+    <div class="footer-cta-bar">
+        <div class="container">
+            <p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="main-footer-content">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <!-- Column 1: Logo & About -->
+                <div class="col-md-4 col-sm-12 footer-about">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="logo" href="index.html">
+                                <!-- تعليق: قمت بتكبير الشعار قليلاً -->
+                                <img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+                            </a>
+                        </div>
+                        <p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+                        <ul class="footer-social-top">
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">روابط سريعة</h4>
+                        <ul class="widget-links">
+                            <li><a href="about-us.html">من نحن</a></li>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="blog.html">المدونة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Important Links -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">معلومات هامة</h4>
+                        <ul class="widget-links">
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">النشرة البريدية</h4>
+                        <p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+                        <form class="newsletter-form">
+                            <input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Bottom Footer Bar -->
+    <div id="bottom-footer" class="text-center">
+        <div class="container">
+            <div class="footer-copyright">
+                <span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

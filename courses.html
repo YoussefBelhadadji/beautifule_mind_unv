@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>الدورات | العقل الجميل</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<!-- Page Loading Progress Bar -->
+		<div id="pageLoadingBar" class="page-loading-bar"></div>
+		<!-- ========== Navbar الاحترافي الجديد ========== -->
+		<nav class="modern-navbar" id="modernNavbar">
+			<div class="navbar-container">
+				<div class="navbar-brand">
+					<a href="index.html" class="brand-link">
+						<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+					</a>
+				</div>
+				<ul class="nav-links" id="navLinks">
+					<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+					<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+					<li><a href="courses.html" class="nav-link active">الدورات</a></li>
+					<li><a href="blog.html" class="nav-link">المدونة</a></li>
+					<li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+				</ul>
+				<div class="nav-cta">
+					<!-- Dark Mode Toggle -->
+					<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+						<i class="fa fa-moon-o dark-icon"></i>
+						<i class="fa fa-sun-o light-icon"></i>
+					</button>
+
+					<button id="open-login-modal" class="cta-btn cta-login">
+						<i class="fa fa-user"></i>
+						<span>تسجيل الدخول</span>
+					</button>
+					<a href="traitment.html" class="cta-btn cta-primary">
+						<i class="fa fa-heart"></i>
+						<span>علاجنا</span>
+					</a>
+				</div>
+				<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+				</button>
+			</div>
+			<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+			<div class="mobile-menu" id="mobileMenu">
+				<div class="mobile-menu-header">
+					<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+					<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+				<ul class="mobile-nav-links">
+					<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+					<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+					<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+					<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+					<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+				</ul>
+				<div class="mobile-cta">
+					<!-- Dark Mode Toggle Mobile -->
+					<button id="darkModeToggleMobile" class="mobile-dark-mode-toggle">
+						<i class="fa fa-moon-o dark-icon"></i>
+						<i class="fa fa-sun-o light-icon"></i>
+						<span class="dark-mode-text">الوضع الليلي</span>
+					</button>
+
+					<button id="mobile-login-btn" class="mobile-cta-btn">
+						<i class="fa fa-user"></i> تسجيل الدخول
+					</button>
+					<a href="traitment.html" class="mobile-cta-btn primary">
+						<i class="fa fa-heart"></i> علاجنا
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!-- ========== نهاية Navbar ========== -->
+		<!-- /Header -->
+
+		<!-- Hero-area -->
+		<div class="hero-area section">
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="hero-area-tree">
+							<li><a href="index.html">الرئيسية</a></li>
+							<li>الدورات</li>
+						</ul>
+						<h1 class="white-text">استكشف دوراتنا في علم النفس</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Hero-area -->
+
+		<!-- Courses -->
+		<div id="courses" class="section">
+			<div class="container">
+				<!-- Course Filter -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="course-filter">
+							<li><a class="active" href="#" data-filter="*">عرض الكل</a></li>
+							<li><a href="#" data-filter=".therapy">العلاجات</a></li>
+							<li><a href="#" data-filter=".tests">الاختبارات النفسية</a></li>
+							<li><a href="#" data-filter=".development">قريباً</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /Course Filter -->
+
+				<!-- Courses Grid -->
+				<div class="row courses-container">
+					<!-- قسم العلاجات -->
+					<div class="col-md-4 col-sm-6 course-item therapy">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/artistic.jpg" alt="التكامل الحسي الحركي"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-1">التعامل الحسي الحركي</a><div class="course-details"><span class="course-category">العلاج النفسي</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item therapy">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/chrildern.jpg" alt="التناول النفسي الحركي"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-2">التناول النفسي الحركي</a><div class="course-details"><span class="course-category">العلاج النفسي</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item therapy">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/photo_5960911417525782058_y.jpg" alt="العلاج الانساني"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-3">العلاج الانساني</a><div class="course-details"><span class="course-category">العلاج النفسي</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item therapy">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/photo_5960911417525782054_y.jpg" alt="العلاج المعرفي السلوكي"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-4">العلاج المعرفي السلوكي</a><div class="course-details"><span class="course-category">العلاج النفسي</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item therapy">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/photo_5960911417525782052_y.jpg" alt="العلاج النسقي"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-5">العلاج النسقي</a><div class="course-details"><span class="course-category">العلاج النفسي</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+
+					<!-- قسم الاختبارات النفسية -->
+					<div class="col-md-4 col-sm-6 course-item tests">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/clean.jpg" alt="اختبارات الذكاء"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-6">اختبارات الذكاء</a><div class="course-details"><span class="course-category">الاختبارات</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item tests">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/refined.jpg" alt="اختبارات النضج العقلي"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-7">اختبارات النضج العقلي</a><div class="course-details"><span class="course-category">الاختبارات</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item tests">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/persnalty.png" alt="اختبارات الشخصية"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-8">اختبارات الشخصية</a><div class="course-details"><span class="course-category">الاختبارات</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item tests">
+						<div class="course"><a href="#" class="course-img"><img src="./pic/photo_5960911417525782048_y.jpg" alt="اختبارات الإسقاطية"><i class="course-link-icon fa fa-link"></i></a><a class="course-title" href="course-details.html?id=therapy-9">اختبارات الإسقاطية</a><div class="course-details"><span class="course-category">الاختبارات</span><span class="course-price course-premium">مدفوعة</span></div></div>
+					</div>
+					
+					<!-- قسم قريباً -->
+					<div class="col-md-4 col-sm-6 course-item development">
+						<div class="course coming-soon"><a href="#" class="course-img"><img src="./pic/mind.jpg" alt="البرمجة اللغوية العصبية"><i class="course-link-icon fa fa-lock"></i></a><a class="course-title" href="course-details.html?id=therapy-10">البرمجة اللغوية العصبية (NLP)</a><div class="course-details"><span class="course-category">تطوير مهني</span><span class="course-price">قريباً</span></div></div>
+					</div>
+					<div class="col-md-4 col-sm-6 course-item development">
+						<div class="course coming-soon"><a href="#" class="course-img"><img src="./pic/photo_5960911417525782052_y.jpg" alt="علم النفس الإيجابي"><i class="course-link-icon fa fa-lock"></i></a><a class="course-title" href="course-details.html?id=therapy-12">علم النفس الإيجابي المتقدم</a><div class="course-details"><span class="course-category">تطوير الذات</span><span class="course-price">قريباً</span></div></div>
+					</div>
+				</div>
+				<!-- /Courses Grid -->
+
+				<!-- Load More Button -->
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button id="load-more-courses" class="main-button">تحميل المزيد</button>
+					</div>
+				</div>
+				<!-- /Load More Button -->
+			</div>
+		</div>
+		<!-- /Courses -->
+
+		<!-- Footer -->		
+<footer id="footer" class="section">
+	<!-- Golden CTA Bar -->
+	<div class="footer-cta-bar">
+		<div class="container">
+			<p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+		</div>
+	</div>
+
+	<!-- Main Footer Content -->
+	<div class="main-footer-content">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- Column 1: Logo & About -->
+				<div class="col-md-4 col-sm-12 footer-about">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<!-- تعليق: قمت بتكبير الشعار قليلاً -->
+								<img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+							</a>
+						</div>
+						<p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+						<ul class="footer-social-top">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="col-md-2 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">روابط سريعة</h4>
+						<ul class="widget-links">
+							<li><a href="about-us.html">من نحن</a></li>
+							<li><a href="courses.html">الدورات</a></li>
+							<li><a href="blog.html">المدونة</a></li>
+							<li><a href="contact.html">اتصل بنا</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Column 3: Important Links -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">معلومات هامة</h4>
+						<ul class="widget-links">
+							<li><a href="#">الأسئلة الشائعة</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">شروط الاستخدام</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 4: Newsletter -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">النشرة البريدية</h4>
+						<p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+						<form class="newsletter-form">
+							<input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+							<button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<!-- Bottom Footer Bar -->
+	<div id="bottom-footer" class="text-center">
+		<div class="container">
+			<div class="footer-copyright">
+				<span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+		<!-- preloader -->
+		<div id='preloader'><div class='preloader'></div></div>
+		<!-- /preloader -->
+
+		<!-- jQuery Plugins -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- Isotope.js for filtering -->
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<!-- Custom Main JS -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- Dark Mode & Loading Animations -->
+		<script type="text/javascript" src="js/dark-mode-loading.js"></script>
+	</body>
+</html>

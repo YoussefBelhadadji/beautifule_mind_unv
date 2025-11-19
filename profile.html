@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>صفحتي الشخصية | العقل الجميل</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+
+		<!-- ========== Navbar الاحترافي الجديد ========== -->
+<nav class="modern-navbar" id="modernNavbar">
+	<div class="navbar-container">
+		<div class="navbar-brand">
+			<a href="index.html" class="brand-link">
+				<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+				<span class="brand-text">Beautiful Mind</span>
+			</a>
+		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="nav-cta">
+			<button id="open-login-modal" class="cta-btn cta-login">
+				<i class="fa fa-user"></i>
+				<span>تسجيل الدخول</span>
+			</button>
+			<a href="traitment.html" class="cta-btn cta-primary">
+				<i class="fa fa-heart"></i>
+				<span>علاجنا</span>
+			</a>
+		</div>
+		<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+		</button>
+	</div>
+	<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="mobile-menu-header">
+			<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+			<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<ul class="mobile-nav-links">
+			<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="mobile-cta">
+			<button id="mobile-login-btn" class="mobile-cta-btn">
+				<i class="fa fa-user"></i> تسجيل الدخول
+			</button>
+			<a href="traitment.html" class="mobile-cta-btn primary">
+				<i class="fa fa-heart"></i> علاجنا
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- ========== نهاية Navbar ========== -->
+		<!-- /Header -->
+
+		<!-- Page Header -->
+		<div class="hero-area section">
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="hero-area-tree">
+							<li><a href="index.html">الرئيسية</a></li>
+							<li>صفحتي الشخصية</li>
+						</ul>
+						<h1 class="white-text">مرحباً بك في ملفك الشخصي</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Page Header -->
+
+		<!-- Profile Section -->
+		<div id="profile-page" class="section">
+			<div class="container">
+				<div class="row">
+
+					<!-- Profile Sidebar (for navigation) -->
+					<div class="col-md-3">
+						<div class="profile-sidebar">
+							<div class="profile-userpic">
+								<img src="./img/default-avatar.png" id="profile-main-avatar" class="img-responsive" alt="">
+							</div>
+							<div class="profile-usertitle">
+								<div class="profile-usertitle-name" id="profile-main-name">
+									جاري التحميل...
+								</div>
+								<div class="profile-usertitle-job" id="profile-main-role">
+									...
+								</div>
+							</div>
+							<div class="profile-usermenu">
+								<ul class="nav">
+									<li class="active"><a href="#"><i class="fa fa-home"></i> نظرة عامة</a></li>
+									<li><a href="#"><i class="fa fa-cog"></i> إعدادات الحساب</a></li>
+									<li><a href="#"><i class="fa fa-calendar"></i> مواعيدي</a></li>
+									<li><a href="#" id="logout-button-profile"><i class="fa fa-sign-out"></i> تسجيل الخروج</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Profile Content -->
+					<div class="col-md-9">
+						<div class="profile-content">
+							
+							<!-- Loading State -->
+							<div id="profile-loading" class="text-center">
+								<i class="fa fa-spinner fa-spin fa-3x"></i>
+								<p>جاري تحميل بيانات ملفك الشخصي...</p>
+							</div>
+
+							<!-- Content will be loaded here by JavaScript -->
+							<div id="profile-data-view" style="display:none;">
+								<!-- Personal Info Card -->
+								<div class="profile-card">
+									<div class="card-header">
+										<h4>المعلومات الأساسية</h4>
+										<a href="#" class="edit-btn"><i class="fa fa-pencil"></i> تعديل</a>
+									</div>
+									<div class="card-body">
+										<p><strong>الاسم الكامل:</strong> <span id="info-name"></span></p>
+										<p><strong>البريد الإلكتروني:</strong> <span id="info-email"></span></p>
+										<p><strong>رقم الهاتف:</strong> <span id="info-phone"></span></p>
+									</div>
+								</div>
+
+								<!-- Dynamic Card for Specialist -->
+								<div class="profile-card specialist-only" style="display: none;">
+									<div class="card-header">
+										<h4>ملف الأخصائي</h4>
+										<a href="#" class="edit-btn"><i class="fa fa-pencil"></i> تعديل</a>
+									</div>
+									<div class="card-body">
+										<p><strong>التخصص:</strong> <span id="info-specialty"></span></p>
+										<p><strong>سنوات الخبرة:</strong> <span id="info-experience"></span></p>
+										<p><strong>رقم الرخصة:</strong> <span id="info-license"></span></p>
+										<p><strong>نبذة تعريفية:</strong> <span id="info-bio"></span></p>
+									</div>
+								</div>
+
+								<!-- Dynamic Card for Patient -->
+								<div class="profile-card patient-only" style="display: none;">
+									<div class="card-header">
+										<h4>ملف المريض</h4>
+										<a href="#" class="edit-btn"><i class="fa fa-pencil"></i> تعديل</a>
+									</div>
+									<div class="card-body">
+										<p><strong>تاريخ الميلاد:</strong> <span id="info-dob"></span></p>
+										<p><strong>ملخص الحالة:</strong> <span id="info-case-summary"></span></p>
+									</div>
+								</div>
+								
+								<!-- Dynamic Card for Guardian -->
+								<div class="profile-card guardian-only" style="display: none;">
+									<div class="card-header">
+										<h4>معلومات الطفل المرتبط</h4>
+									</div>
+									<div class="card-body">
+										<p>أنت ولي أمر للمستفيد: <strong id="info-child-name"></strong></p>
+										<p><a href="#">عرض ملف الطفل الكامل →</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /Profile Section -->
+
+		<!-- Footer -->
+		<!-- (Your footer code goes here) -->
+		<!-- /Footer -->
+		<!-- 1. jQuery and Bootstrap (Required by main.js) -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- 2. Firebase SDKs (The Core Libraries) -->
+		<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+		<!-- 3. Initialize Firebase with your config -->
+		<script>
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: "AIzaSyBb5iO_lGX5XtREkM1JyL2NIDbXyD14KDU",
+				authDomain: "beautiful-mind-app.firebaseapp.com",
+				projectId: "beautiful-mind-app",
+				storageBucket: "beautiful-mind-app.appspot.com",
+				messagingSenderId: "148874828030",
+				appId: "1:148874828030:web:df43cc75c37b1b83442daf"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+		</script>
+
+		<!-- 4. Your custom JavaScript files -->
+		<script type="text/javascript" src="js/main.js"></script>       <!-- For header/footer logic -->
+		<script type="text/javascript"src="js/profile.js"></script>     <!-- For profile page logic -->
+
+	</body>
+</html>

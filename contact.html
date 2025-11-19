@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>بوابة التسجيل | العقل الجميل</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<style>
+#contact-map-modern {
+  width: 100%;
+  min-height: 340px;
+  height: 340px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #e3e8ee;
+}
+@media (max-width: 900px) {
+  #contact-map-modern {
+    min-height: 220px;
+    height: 220px;
+  }
+}
+</style>
+	</head>
+	<body>
+		<!-- Page Loading Progress Bar -->
+		<div id="pageLoadingBar" class="page-loading-bar"></div>
+
+		<!-- ========== Navbar الاحترافي الجديد ========== -->
+<nav class="modern-navbar" id="modernNavbar">
+	<div class="navbar-container">
+		<div class="navbar-brand">
+			<a href="index.html" class="brand-link">
+				<img src="./img/logo-new.svg" alt="Beautiful Mind University" class="brand-logo">
+			</a>
+		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index.html" class="nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+		</ul>
+		<div class="nav-cta">
+			<!-- Dark Mode Toggle -->
+			<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+				<i class="fa fa-moon-o dark-icon"></i>
+				<i class="fa fa-sun-o light-icon"></i>
+			</button>
+
+			<button id="open-login-modal" class="cta-btn cta-login">
+				<i class="fa fa-user"></i>
+				<span>تسجيل الدخول</span>
+			</button>
+			<a href="traitment.html" class="cta-btn cta-primary">
+				<i class="fa fa-heart"></i>
+				<span>علاجنا</span>
+			</a>
+		</div>
+		<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+			<span class="hamburger-line"></span>
+		</button>
+	</div>
+	<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="mobile-menu-header">
+			<img src="./img/logo-new.svg" alt="Logo" class="mobile-logo">
+			<button class="close-menu" id="closeMenuBtn" aria-label="Close Menu">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<ul class="mobile-nav-links">
+			<li><a href="index.html" class="mobile-nav-link">الرئيسية</a></li>
+			<li><a href="about_us.html" class="mobile-nav-link">من نحن</a></li>
+			<li><a href="courses.html" class="mobile-nav-link">الدورات</a></li>
+			<li><a href="blog.html" class="mobile-nav-link">المدونة</a></li>
+			<li><a href="contact.html" class="mobile-nav-link">اتصل بنا</a></li>
+		</ul>
+		<div class="mobile-cta">
+			<!-- Dark Mode Toggle Mobile -->
+			<button id="darkModeToggleMobile" class="mobile-dark-mode-toggle">
+				<i class="fa fa-moon-o dark-icon"></i>
+				<i class="fa fa-sun-o light-icon"></i>
+				<span class="dark-mode-text">الوضع الليلي</span>
+			</button>
+
+			<button id="mobile-login-btn" class="mobile-cta-btn">
+				<i class="fa fa-user"></i> تسجيل الدخول
+			</button>
+			<a href="traitment.html" class="mobile-cta-btn primary">
+				<i class="fa fa-heart"></i> علاجنا
+			</a>
+		</div>
+	</div>
+</nav>
+<!-- ========== نهاية Navbar ========== -->
+
+		<!-- Hero-area -->
+		<div class="hero-area section">
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="hero-area-tree">
+							<li><a href="index.html">الرئيسية</a></li>
+							<li>بوابة التسجيل</li>
+						</ul>
+						<h1 class="white-text">انضم إلى مجتمع العقل الجميل</h1>
+						<p class="lead white-text">خطوتك الأولى نحو رحلة النمو والتمكين تبدأ من هنا.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Hero-area -->
+
+		<!-- Smart Registration Section -->
+		<div id="contact" class="section">
+			<div class="container">
+				<!-- Step 1: User Type Selection -->
+				<div id="user-type-selection" class="row text-center">
+					<div class="section-header">
+						<h2>اختر مسار التسجيل المناسب لك</h2>
+						<p>لتوفير أفضل تجربة، يرجى تحديد هويتك.</p>
+					</div>
+					<div class="col-md-5 col-md-offset-1 col-sm-6">
+						<div class="user-type-box" data-target="#specialist-form-wrapper">
+							<i class="fa fa-user-md"></i>
+							<h3>أنا أخصائي</h3>
+							<p>انضم إلى شبكتنا من الخبراء والمعالجين.</p>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6">
+						<div class="user-type-box" data-target="#patient-form-wrapper">
+							<i class="fa fa-heartbeat"></i>
+							<h3>أبحث عن مساعدة</h3>
+							<p>سجل لنفسك أو لطفلك لبدء رحلة العلاج.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Step 2: Forms (Initially Hidden) -->
+				<!-- Specialist Form Wrapper -->
+				<div id="specialist-form-wrapper" class="form-wrapper" style="display:none;">
+					<div class="section-header text-center"><h3>تسجيل أخصائي جديد</h3></div>
+					<form class="contact-form-modern">
+						<div class="row">
+							<div class="col-md-6"><input class="input" type="text" placeholder="الاسم الكامل" required></div>
+							<div class="col-md-6"><input class="input" type="text" placeholder="التخصص الدقيق (مثال: نفسي حركي)" required></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"><input class="input" type="email" placeholder="البريد الإلكتروني" required></div>
+							<div class="col-md-6"><input class="input" type="tel" placeholder="رقم الهاتف" required></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"><input class="input" type="text" placeholder="رقم رخصة المزاولة (إن وجد)"></div>
+							<div class="col-md-6"><input class="input" type="text" placeholder="سنوات الخبرة" required></div>
+						</div>
+						<textarea class="input" placeholder="نبذة مختصرة عنك وعن خبراتك..." rows="4"></textarea>
+						<button class="main-button">إرسال طلب الانضمام</button>
+					</form>
+				</div>
+
+				<!-- Patient Form Wrapper -->
+				<div id="patient-form-wrapper" class="form-wrapper" style="display:none;">
+					<div class="section-header text-center"><h3>فتح ملف جديد</h3></div>
+					<!-- Patient Type Radio Buttons -->
+					<div class="patient-type-selection text-center">
+						<label><input type="radio" name="patient_type" value="adult" checked> أسجل لنفسي (بالغ)</label>
+						<label><input type="radio" name="patient_type" value="child"> أسجل لطفل (ولي أمر)</label>
+					</div>
+					
+					<form class="contact-form-modern">
+						<!-- Fields for Guardian (if child is selected) -->
+						<div class="child-fields" style="display:none;">
+							<h4 class="form-subtitle">معلومات ولي الأمر</h4>
+							<div class="row">
+								<div class="col-md-6"><input class="input" type="text" placeholder="اسم ولي الأمر الكامل" name="guardian_name"></div>
+								<div class="col-md-6"><input class="input" type="text" placeholder="صلة القرابة (أب, أم, ...)" name="guardian_relation"></div>
+							</div>
+							 <div class="row">
+								<div class="col-md-6"><input class="input" type="email" placeholder="البريد الإلكتروني للولي" name="guardian_email"></div>
+								<div class="col-md-6"><input class="input" type="tel" placeholder="رقم هاتف الولي" name="guardian_phone"></div>
+							</div>
+						</div>
+						
+						<!-- Fields for Patient (Adult or Child) -->
+						<h4 class="form-subtitle" id="patient-info-title">معلومات المستفيد (البالغ)</h4>
+						<div class="row">
+							<div class="col-md-6"><input class="input" type="text" placeholder="الاسم الكامل" name="patient_name" required></div>
+							<div class="col-md-6"><input class="input" type="date" placeholder="تاريخ الميلاد" name="patient_dob" required></div>
+						</div>
+						<textarea class="input" placeholder="اشرح الحالة أو سبب طلب المساعدة بشكل مختصر..." rows="4" required></textarea>
+						<button class="main-button">تقديم الطلب وفتح الملف</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- /Smart Registration Section -->
+		<!-- Direct Contact & Map Section -->
+		<div id="direct-contact" class="section bg-grey"> <!-- A subtle grey background to separate the section -->
+			<div class="container">
+				<div class="row">
+					<div class="section-header text-center">
+						<h2>تواصل معنا مباشرة</h2>
+						<p class="lead">لديك استفسار عام؟ فريقنا جاهز لمساعدتك.</p>
+					</div>
+
+					<!-- Contact Information Cards -->
+					<div class="col-md-5">
+						<div class="contact-info-card">
+							<div class="icon-wrapper">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="info-wrapper">
+								<h4>مقرنا الرئيسي</h4>
+								<p>عين تموشنت الجامعة بوشعيب الجزائر</p>
+							</div>
+						</div>
+						<div class="contact-info-card">
+							<div class="icon-wrapper">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="info-wrapper">
+								<h4>الهاتف</h4>
+								<p>+213 (0)5 50 12 34 56</p>
+							</div>
+						</div>
+						<div class="contact-info-card">
+							<div class="icon-wrapper">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="info-wrapper">
+								<h4>البريد الإلكتروني</h4>
+								<p>contact@beautifulmind.dz</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Section (replaces map) -->
+					<div class="col-md-7">
+						<section class="faq-section" style="background: #F8FBFF; border-radius: 12px; box-shadow: 0 2px 8px rgba(110,193,228,0.08); padding: 30px 20px; margin-bottom: 30px;">
+							<h3 style="color: #374050; margin-bottom: 20px; font-weight: bold;">الأسئلة الأكثر شيوعًا</h3>
+							<div class="panel-group" id="faqAccordion">
+								<div class="panel panel-default" style="margin-bottom: 10px;">
+									<div class="panel-heading" style="background: #6EC1E4; color: white; border-radius: 6px;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1" style="display: block; color: white; text-decoration: none;">ما هي الخدمات التي تقدمها منصة العقل الجميل؟</a>
+										</h4>
+									</div>
+									<div id="faq1" class="panel-collapse collapse in">
+										<div class="panel-body" style="background: #fff; color: #374050; border-radius: 0 0 6px 6px;">نقدم دعمًا نفسيًا وتربويًا للأطفال ذوي الاضطرابات النمائية، بالإضافة إلى دورات وموارد للأولياء والأخصائيين.</div>
+									</div>
+								</div>
+								<div class="panel panel-default" style="margin-bottom: 10px;">
+									<div class="panel-heading" style="background: #6EC1E4; color: white; border-radius: 6px;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2" class="collapsed" style="display: block; color: white; text-decoration: none;">كيف يمكنني التواصل مع فريق الدعم؟</a>
+										</h4>
+									</div>
+									<div id="faq2" class="panel-collapse collapse">
+										<div class="panel-body" style="background: #fff; color: #374050; border-radius: 0 0 6px 6px;">يمكنك التواصل معنا عبر صفحة الاتصال أو البريد الإلكتروني: contact@beautifulmind.dz</div>
+									</div>
+								</div>
+								<div class="panel panel-default" style="margin-bottom: 10px;">
+									<div class="panel-heading" style="background: #6EC1E4; color: white; border-radius: 6px;">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3" class="collapsed" style="display: block; color: white; text-decoration: none;">هل يمكنني التسجيل في الدورات عبر الإنترنت؟</a>
+										</h4>
+									</div>
+									<div id="faq3" class="panel-collapse collapse">
+										<div class="panel-body" style="background: #fff; color: #374050; border-radius: 0 0 6px 6px;">نعم، يمكنك التسجيل في الدورات مباشرة عبر الموقع من صفحة الدورات.</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /Direct Contact & Map Section -->
+		<!-- Footer -->
+		<footer id="footer" class="section">
+	<!-- Golden CTA Bar -->
+	<div class="footer-cta-bar">
+		<div class="container">
+			<p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+		</div>
+	</div>
+
+	<!-- Main Footer Content -->
+	<div class="main-footer-content">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+
+				<!-- Column 1: Logo & About -->
+				<div class="col-md-4 col-sm-12 footer-about">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<!-- تعليق: قمت بتكبير الشعار قليلاً -->
+								<img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+							</a>
+						</div>
+						<p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+						<ul class="footer-social-top">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="col-md-2 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">روابط سريعة</h4>
+						<ul class="widget-links">
+							<li><a href="about-us.html">من نحن</a></li>
+							<li><a href="courses.html">الدورات</a></li>
+							<li><a href="blog.html">المدونة</a></li>
+							<li><a href="contact.html">اتصل بنا</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Column 3: Important Links -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">معلومات هامة</h4>
+						<ul class="widget-links">
+							<li><a href="#">الأسئلة الشائعة</a></li>
+							<li><a href="#">سياسة الخصوصية</a></li>
+							<li><a href="#">شروط الاستخدام</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Column 4: Newsletter -->
+				<div class="col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h4 class="widget-title">النشرة البريدية</h4>
+						<p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+						<form class="newsletter-form">
+							<input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+							<button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+
+	<!-- Bottom Footer Bar -->
+	<div id="bottom-footer" class="text-center">
+		<div class="container">
+			<div class="footer-copyright">
+				<span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+		<!-- /Footer -->
+
+		<!-- preloader, scripts etc. -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/google-map.js"></script> <!-- أضف هذا السطر -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<!-- Add SDKs for Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+	apiKey: "AIzaSyBb5iO_lGX5XtREkM1JyL2NIDbXyD14KDU", // الصق مفاتيحك هنا
+	authDomain: "beautiful-mind-app.firebaseapp.com",
+	projectId: "beautiful-mind-app",
+	storageBucket: "beautiful-mind-app.firebasestorage.app",
+	messagingSenderId: "148874828030",
+	appId: "1:148874828030:web:df43cc75c37b1b83442daf"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  // Initialize services
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  </script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  if (typeof google !== 'undefined' && typeof google.maps !== 'undefined') {
+    var map = new google.maps.Map(document.getElementById('contact-map-modern'), {
+      center: { lat: 35.3013, lng: -1.1403 },
+      zoom: 13,
+      styles: [
+        {"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#374050"}]},
+        {"featureType":"landscape","elementType":"all","stylers":[{"color":"#ebebeb"}]},
+        {"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"color":"#e6e6e6"}]},
+        {"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"color":"#f3f3f3"}]},
+        {"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},
+        {"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},
+        {"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+        {"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
+        {"featureType":"water","elementType":"all","stylers":[{"color":"#6EC1E4"},{"visibility":"on"}]}
+      ],
+      disableDefaultUI: true,
+      zoomControl: true,
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: false
+    });
+    new google.maps.Marker({
+      position: { lat: 35.3013, lng: -1.1403 },
+      map: map,
+      title: 'موقع العقل الجميل'
+    });
+  }
+});
+</script>
+
+<!-- Dark Mode & Loading Animations -->
+<script type="text/javascript" src="js/dark-mode-loading.js"></script>
+
+	</body>
+</html>
